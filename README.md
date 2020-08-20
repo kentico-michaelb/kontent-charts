@@ -1,68 +1,64 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Kentico Kontent Dynamic Charts
+
+This application demonstrates how to use [Kentico Kontent headless CMS](https://kontent.ai/) and [ChartJS](https://www.chartjs.org/docs/latest/) to create line and bar graphs using a headless CMS. This project is using the [Kentico Kontent JavaScript Delivery SDK](https://github.com/Kentico/kontent-delivery-sdk-js) and was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
+## Prerequisites
+* [Node and npm](https://nodejs.org/en/)
+* [Kentico Kontent account](https://app.kontent.ai)
+
+## Kentico Kontent setup
+
+### Creating your sample Chart project using the [Template Manager](https://kentico.github.io/kontent-template-manager/import-from-file)
+1. Sign in to your [Kentico Kontent account](https://app.kontent.ai)
+1. [Create a new project](https://docs.kontent.ai/tutorials/set-up-projects/manage-projects/managing-projects#a-creating-projects)
+1. In Kentico Kontent, choose Project settings from the app menu
+1. Under Development, choose API keys and copy the Project ID
+1. Paste the copied ID into the Project ID input on the [Template Manager](https://kentico.github.io/kontent-template-manager/import-from-file)
+1. Enable the Management API and repeat step 5 with the Management API key and Template Manager input field
+1. Drop the [project export package](https://github.com/kentico-michaelb/kontent-charts/blob/master/exports/kontent-backup-20-8-2020-9-4.zip) onto the Template Manager
+1. Click "Prepare import data"
+1. Click "Proceed with import"
+1. Proceed to "Connecting to your project" instructions below
+
+## Application setup
+
+### Setting up the application
+To run the app:
+1. Clone the app repository with your favorite GIT client
+1. Open the project in Visual Studio Code
+1. Follow instructions below to connect to your Kontent project
+1. Run `npm install` and `npm start` in the terminal to install dependencies and run the React application locally
+
+### Connecting to your project
+
+1. In Kentico Kontent, choose Project settings from the app menu
+1. Under Development, choose API keys 
+    1. You will need the **Project ID** key from your newly created project
+1. Open the `~\kontent-charts\src\config.js` file
+1. Use the values from your Kentico Kontent project in the `config.js` file:
+```javascript
+import { DeliveryClient } from '@kentico/kontent-delivery';
+
+export const client = new DeliveryClient({projectId: 'your-project-id'});
+```
+5. Save the changes
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+#### `npm install` 
 
-Runs the app in the development mode.<br />
+Installs all the requiered dependencies.
+
+#### `npm start`
+
+Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
+The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Testing chart creation in your project
+Wiki instructions coming soon! 
