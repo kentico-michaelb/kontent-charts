@@ -5,7 +5,7 @@ export const resolveItemInRichText = (item) => {
     if (item.system.type === 'bar' || item.system.type === 'line') {
       let chart = item;
       return `
-        <div style="height: ${chart.graph_height.value}px; width: ${chart.graph_width.value}px;">
+        <div class="chart-styles" style="height: ${chart.graph_height.value}px; width: ${chart.graph_width.value}px;">
           <canvas id="${chart.system.codename}" name="${chart.system.codename}"></canvas>
       </div>`;
     }
