@@ -64,4 +64,6 @@ You will also see any lint errors in the console.
 
 
 ### Testing chart creation in your project
-Wiki instructions coming soon! 
+[Steps to create a new chart in the sample project](https://github.com/kentico-michaelb/kontent-charts/wiki/Creating-Charts-in-the-kontent-charts-sample).
+
+Additional information can be seen in the repository's [wiki](https://github.com/kentico-michaelb/kontent-charts/wiki)
