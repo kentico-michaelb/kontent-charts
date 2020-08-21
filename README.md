@@ -18,7 +18,7 @@ This application demonstrates how to use [Kentico Kontent headless CMS](https://
 1. Under Development, choose API keys and copy the Project ID
 1. Paste the copied ID into the Project ID input on the [Template Manager](https://kentico.github.io/kontent-template-manager/import-from-file)
 1. Enable the Management API and repeat step 5 with the Management API key and Template Manager input field
-1. Drop the [project export package](https://github.com/kentico-michaelb/kontent-charts/blob/master/exports/kontent-backup-20-8-2020-9-4.zip) onto the Template Manager
+1. Drop the [project export package](https://github.com/kentico-michaelb/kontent-charts/blob/master/exports/kontent-backup-21-8-2020-8-25.zip) onto the Template Manager
 1. Click "Prepare import data"
 1. Click "Proceed with import"
 1. Proceed to "Connecting to your project" instructions below
