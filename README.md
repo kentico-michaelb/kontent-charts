@@ -1,5 +1,8 @@
 # Kentico Kontent Dynamic Charts
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/aed954dc-5189-415f-9b86-b2ca2391ced4/deploy-status)](https://app.netlify.com/sites/kontent-charts/deploys) <br>
+[Click here to see the Live Demo](https://kontent-charts.netlify.app/).
+
 This application demonstrates how to use [Kentico Kontent headless CMS](https://kontent.ai/) and [ChartJS](https://www.chartjs.org/docs/latest/) to create line and bar graphs using a headless CMS. This project is using the [Kentico Kontent JavaScript Delivery SDK](https://github.com/Kentico/kontent-delivery-sdk-js) and was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 ## Prerequisites
@@ -35,7 +38,7 @@ To run the app:
 1. Under Development, choose API keys 
     1. You will need the **Project ID** key from your newly created project
 1. Open the `~\kontent-charts\src\config.js` file
-1. Use the values from your Kentico Kontent project in the `config.js` file:
+1. Use the values from your Kentico Kontent project to replace the sample project ID in the `config.js` file:
 ```javascript
 import { DeliveryClient } from '@kentico/kontent-delivery';
 
@@ -61,4 +64,6 @@ You will also see any lint errors in the console.
 
 
 ### Testing chart creation in your project
-Wiki instructions coming soon! 
+[Steps to create a new chart in the sample project](https://github.com/kentico-michaelb/kontent-charts/wiki/Creating-Charts-in-the-kontent-charts-sample).
+
+Additional information can be seen in the repository's [wiki](https://github.com/kentico-michaelb/kontent-charts/wiki)
